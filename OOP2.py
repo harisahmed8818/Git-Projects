@@ -17,6 +17,8 @@ class Wallet:
     def get_balance(self):
         return f'Current balance : {self.balance}'
 
+# Example Usage
+
 wallet = Wallet("Haris",500)
 print(wallet.get_balance())
 
