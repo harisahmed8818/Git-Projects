@@ -1,5 +1,5 @@
 def is_palindrome(s):
-    s = s.lower()
+    s = (s.lower())
     new_s = ""
     for char in s:
         if char.isalnum():

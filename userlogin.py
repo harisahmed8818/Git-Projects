@@ -35,7 +35,7 @@ def log_in():
 # Main function to run the authentication system
 def main():
     while True:
-        print("\nUser Authentication System")
+        print("User Authentication System")
         print("1. Sign Up")
         print("2. Log In")
         print("3. Exit")

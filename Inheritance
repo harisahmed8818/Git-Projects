@@ -1,0 +1,55 @@
+# Single 
+
+class Animal:
+    def sound(self):
+        print("Animals make sounds")
+
+class Dog(Animal):  # Dog inherits from Animal
+    def bark(self):
+        print("Dog barks")
+
+# Creating an object of Dog
+dog = Dog()
+dog.sound()  # Inherited method
+dog.bark()
+
+
+# Multiple
+
+class A:
+    def method_A(self):
+        print("Method A")
+
+class B:
+    def method_B(self):
+        print("Method B")
+
+class C(A, B):  # C inherits from A and B
+    pass
+
+obj = C()
+obj.method_A()
+obj.method_B()
+
+
+# Multilevel
+
+class Grandparent:
+    def method1(self):
+        print("Grandparent method")
+
+class Parent(Grandparent):
+    def method2(self):
+        print("Parent method")
+
+class Child(Parent):
+    def method3(self):
+        print("Child method")
+
+# Creating an object of Child
+obj = Child()
+obj.method1()  # Inherited from Grandparent
+obj.method2()  # Inherited from Parent
+obj.method3()  # Own method
+
+
