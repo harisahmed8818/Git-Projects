@@ -23,6 +23,6 @@ class SmartBulb(Device):
 # Example Usage
 bulb = SmartBulb("Room Light")
 print(bulb.name)
-
+print(bulb.brightness)
 bulb.toggle_status()      # Turns ON
 bulb.adjust_brightness(80)  # Sets brightness to 80%

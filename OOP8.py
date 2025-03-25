@@ -6,7 +6,8 @@ class Appliance:
 
     @abstractmethod
     def turn_off(self):
-        pass   
+        print('FIVE')
+        pass
 
 class WashingMachine(Appliance):
     def turn_on(self):

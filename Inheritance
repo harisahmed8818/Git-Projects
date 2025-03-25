@@ -1,55 +1,79 @@
-# Single 
+# # Single 
 
-class Animal:
-    def sound(self):
-        print("Animals make sounds")
+# class Animal:
+#     def sound(self):
+#         print("Animals make sounds")
 
-class Dog(Animal):  # Dog inherits from Animal
-    def bark(self):
-        print("Dog barks")
+# class Dog(Animal):  # Dog inherits from Animal
+#     def bark(self):
+#         print("Dog barks")
 
-# Creating an object of Dog
-dog = Dog()
-dog.sound()  # Inherited method
-dog.bark()
+# # Creating an object of Dog
+# dog = Dog()
+# dog.sound()  # Inherited method
+# dog.bark()
 
 
-# Multiple
+# # Multiple
 
-class A:
-    def method_A(self):
-        print("Method A")
+# class A:
+#     def method_A(self):
+#         print("Method A")
+
+# class B:
+#     def method_B(self):
+#         print("Method B")
+
+# class C(A, B):  # C inherits from A and B
+#     pass
+
+# obj = C()
+# obj.method_A()
+# obj.method_B()
+
+
+# # Multilevel
+
+# class Grandparent:
+#     def method1(self):
+#         print("Grandparent method")
+
+# class Parent(Grandparent):
+#     def method2(self):
+#         print("Parent method")
+
+# class Child(Parent):
+#     def method3(self):
+#         print("Child method")
+
+# # Creating an object of Child
+# obj = Child()
+# obj.method1()  # Inherited from Grandparent
+# obj.method2()  # Inherited from Parent
+# obj.method3()  # Own method
 
 class B:
-    def method_B(self):
-        print("Method B")
+    def x(self):
+        print('x:B')
 
-class C(A, B):  # C inherits from A and B
+class C:
+    def x(self):
+        print('x:C')
+
+class D(B,C):
     pass
 
-obj = C()
-obj.method_A()
-obj.method_B()
+d = D()
+d.x()
 
 
-# Multilevel
+# class Parent:
+#     def show(self):
+#         print("This is Parent class.")
 
-class Grandparent:
-    def method1(self):
-        print("Grandparent method")
+# class Child(Parent):
+#     def show(self):  # Overriding the parent method
+#         print("This is Child class.")
 
-class Parent(Grandparent):
-    def method2(self):
-        print("Parent method")
-
-class Child(Parent):
-    def method3(self):
-        print("Child method")
-
-# Creating an object of Child
-obj = Child()
-obj.method1()  # Inherited from Grandparent
-obj.method2()  # Inherited from Parent
-obj.method3()  # Own method
-
-
+# c = Child()
+# c.show()  
